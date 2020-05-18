@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="1024" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" >
+
+    <Grid Background="#FFEEEEEE">
+        <Grid Width="260" HorizontalAlignment="Left" Background="#FF31577E">
+            <Button Content="MyProfile" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="231" Height="58" Click="MyProfile_Click"/>
+            <Button Content="FindPerson" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top" Width="231" Height="58" Click="FindPerson_Click"/>
+            <Button Content="Log Out" HorizontalAlignment="Left" Margin="10,532,0,0" VerticalAlignment="Top" Width="231" Height="58" Click="LogOut_Click"/>
+            <Button Content="Change Pass" HorizontalAlignment="Left" VerticalAlignment="Top" Width="231" Margin="10,187,0,0" Height="58" Click="Change_Pass_Click"/>
+            <Button Content="Add Post" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Width="231" Height="58" Click="Add_Post_Click"/>
+            <Button Content="Edit Profile" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="231" Height="58" Click="Edit_Profile_Click"/>
+            <Button Content="My Data" HorizontalAlignment="Left" Margin="10,378,0,0" VerticalAlignment="Top" Width="229" Height="56" Click="My_Data_Click"/>
+        </Grid>
+
+        <Grid Margin="260,37,0,0">
+            <Grid x:Name="GridPerson" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Grid>
+        <Button VerticalAlignment="Top"   Click="OFF" Margin="948,0,0,0">
+            <materialDesign:PackIcon Kind="Power" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" >
+
+            </materialDesign:PackIcon>
+        </Button>
+        
+    </Grid>
+</Window>

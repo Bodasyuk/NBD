@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WpfApp2.ucWindows.ucFindPerson"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp2.ucWindows"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             Height="550" Width="774"  Background="#FFEEEEEE">
+    <Grid Margin="1,0,0,0.2">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+
+                <Button Width="176" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="290,0,290,105.4" Content="Search"   Height="35" Click="Button_Click"/>
+                <TextBox Name="PersonNickName" Margin="202,243,197.6,250.4" materialDesign:HintAssist.Hint="Person nickname" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="22" TextChanged="PersonNickName_TextChanged"  />
+
+            </Grid>
+        </materialDesign:TransitioningContent>
+
+
+    </Grid>
+</UserControl>
